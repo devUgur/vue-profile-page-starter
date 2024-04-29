@@ -44,7 +44,7 @@ const slides = [
 <template>
   <div id="home-intro-component">
     <vueper-slides
-      fixed-height="80vh"
+      fixed-height="60vh"
       autoplay
       :pause-on-hover="pauseOnHover"
       :arrows="!isMobile"

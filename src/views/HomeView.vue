@@ -4,7 +4,6 @@ import HomeIntroComponent from '@/components/home/HomeIntroComponent.vue'
 
 <template>
   <div id="home-view">
-    <h3>Home View</h3>
     <HomeIntroComponent></HomeIntroComponent>
   </div>
 </template>

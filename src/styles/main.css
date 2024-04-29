@@ -9,3 +9,8 @@ body {
   --primary-color: #ffffff;
   --secondary-color: #000000;
 }
+
+.container {
+  max-width: 1400px;
+  margin: 0 auto;
+}
