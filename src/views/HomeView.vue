@@ -5,7 +5,7 @@ import HomeOurServicesComponent from '@/components/home/HomeOurServicesComponent
 
 <template>
   <div id="home-view">
-    <HomeIntroComponent></HomeIntroComponent>
+    <HomeIntroComponent class="p-12"></HomeIntroComponent>
     <HomeOurServicesComponent></HomeOurServicesComponent>
   </div>
 </template>
