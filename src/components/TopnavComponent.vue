@@ -6,7 +6,7 @@
       <div>
         <img class="w-full h-24 bg-red-300" src="@/assets/logo/logo.jpg" />
       </div>
-      <div id="links" class="flex gap-10">
+      <div id="links" class="gap-10 hidden sm:flex">
         <RouterLink to="/">Home</RouterLink>
         <RouterLink to="/about">About Us</RouterLink>
         <RouterLink to="/services">Services</RouterLink>
