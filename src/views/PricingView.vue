@@ -1,7 +1,7 @@
 <script setup lang="ts"></script>
 
 <template>
-  <div id="about-view">
-    <h3>About View</h3>
+  <div id="pricing-view">
+    <h3>Pricing View</h3>
   </div>
 </template>
