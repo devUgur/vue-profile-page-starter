@@ -1,5 +1,6 @@
 <script setup lang="ts">
 import BaseSection from '@/components/sections/BaseSection.vue'
+import ABaseAccordion from "@/components/animated/buttons/ABaseAccordion.vue"
 const weAreSection = {
   title: 'We are awesome TEAM',
   content: [
@@ -24,12 +25,12 @@ const chooseSection = {
   </div>
   <div class="grid place-content-center w-50 mx-auto ">
 
-    <BaseSection :button="true" :sectionItem="weAreSection" />
+    <BaseSection :button="true" :position="'center'"  :sectionItem="weAreSection" />
     <hr />
     <div class="md:flex flex-row">
-      <BaseSection :button="false" :sectionItem="chooseSection" />
-      <BaseSection :button="false" :sectionItem="chooseSection" />
-      <BaseSection :button="false" :sectionItem="chooseSection" />
+      <BaseSection :button="false"  :position="'left'" :sectionItem="chooseSection" />
+      <BaseSection :button="false" :position="'right'" :sectionItem="chooseSection" />
+      <ABaseAccordion />
     </div>
   </div>
 
