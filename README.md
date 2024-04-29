@@ -1,2 +1,2 @@
 # vue-profile-page-starter
-A Website Profile Page template for buisness
+A Website Profile Page template for business
