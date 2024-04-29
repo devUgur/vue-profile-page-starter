@@ -14,3 +14,14 @@ body {
   max-width: 1400px;
   margin: 0 auto;
 }
+
+h1 {
+  padding: 1rem;
+}
+p {
+  padding: 0.5rem;
+}
+hr {
+  margin: 2rem;
+  border-radius: 22px;
+}

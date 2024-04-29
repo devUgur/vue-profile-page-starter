@@ -1,11 +1,38 @@
 <script setup lang="ts">
-import BaseSection from "@/components/sections/BaseSection.vue"</script>
+import BaseSection from '@/components/sections/BaseSection.vue'
+const weAreSection = {
+  title: 'We are awesome TEAM',
+  content: [
+    'Sed ut perspiciaatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas',
+    'Sed ut perspiciaatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas'
+  ],
+  button: 'Info'
+}
+const chooseSection = {
+  title: 'Why Choose Us?',
+  content: [
+    'Sed ut perspiciaatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur. ',
+    'Sed ut perspiciaatis iste natus error sit voluptatem probably havent heard of them accusamus.',
+  ],
+  button: ''
+}
+</script>
 
 <template>
-  <div class="border bg-slate-300 text-black p-9 font-bold text-2xl" id="about-view">
-    <h1>Home | About View</h1>
+  <div class="grid place-content-center border bg-slate-500 text-white p-9 font-bold text-2xl" id="about-view">
+    <h1>Home | About Us</h1>
   </div>
-  <BaseSection />
+  <div class="grid place-content-center w-50 mx-auto ">
+
+    <BaseSection :button="true" :sectionItem="weAreSection" />
+    <hr />
+    <div class="md:flex flex-row">
+      <BaseSection :button="false" :sectionItem="chooseSection" />
+      <BaseSection :button="false" :sectionItem="chooseSection" />
+      <BaseSection :button="false" :sectionItem="chooseSection" />
+    </div>
+  </div>
+
 </template>
 
 <style>
