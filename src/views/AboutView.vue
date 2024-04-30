@@ -35,7 +35,7 @@ const chooseSection = {
         <LinearProgressBar />
         <LinearProgressBar />
       </div>
-      <ABaseImgModal />
+        <ABaseImgModal />
     </div>
   </div>
 

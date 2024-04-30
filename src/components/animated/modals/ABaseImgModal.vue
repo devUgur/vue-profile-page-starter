@@ -1,5 +1,5 @@
 <template>
-  <img id="myImg" src="https://www.w3schools.com/howto/img_fjords.jpg" alt="Trolltunga, Norway" width="500" height="300">
+  <img id="myImg" src="@/assets/logo/logo.jpg" alt="Trolltunga, Norway" >
 
   <!-- The Modal -->
   <div id="myModal" class="modal">
@@ -20,7 +20,7 @@ onMounted(() => {
   img.onclick = function() {
     modal.style.display = "block";
     modalImg.src = this.src;
-    modalImg.alt = this.alt;
+    modalImg.alt = this.alt;    
   }
 
   // When the user clicks on <span> (x), close the modal
