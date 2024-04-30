@@ -1,6 +1,7 @@
 <script setup lang="ts">
+import LinearProgressBar from "@/components/animated/bars/LinearProgressBar.vue"
 import BaseSection from '@/components/sections/BaseSection.vue'
-import ABaseAccordion from "@/components/animated/buttons/ABaseAccordion.vue"
+import ABaseImgModal from "@/components/animated/modals/ABaseImgModal.vue"
 const weAreSection = {
   title: 'We are awesome TEAM',
   content: [
@@ -28,13 +29,17 @@ const chooseSection = {
     <BaseSection :button="true" :position="'center'"  :sectionItem="weAreSection" />
     <hr />
     <div class="md:flex flex-row">
-      <BaseSection :button="false"  :position="'left'" :sectionItem="chooseSection" />
       <BaseSection :button="false" :position="'right'" :sectionItem="chooseSection" />
-      <ABaseAccordion />
+      <div class="my-auto">
+        <LinearProgressBar />
+        <LinearProgressBar />
+        <LinearProgressBar />
+      </div>
+      <ABaseImgModal />
     </div>
   </div>
 
 </template>
 
-<style>
+<style scoped>
 </style>
