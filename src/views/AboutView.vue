@@ -22,12 +22,10 @@ const chooseSection = {
 </script>
 
 <template>
-  <div class="grid place-content-center mx-auto ">
-    
     <BaseSection class="w-[50%]" :button="true" :position="'center'"  :sectionItem="weAreSection" />
     <hr />
     <ABaseIntroSection  :content="'Home | About'" />
-    <div class="md:flex flex-row]">
+    <div class="md:flex flex-row my-10 gap-10 p-10">
       <div class=" w-[50%]">
 
         <BaseSection :button="false" :position="'right'" :sectionItem="chooseSection" />
@@ -39,7 +37,6 @@ const chooseSection = {
       </div>
         <ABaseImgModal />
     </div>
-  </div>
 
 </template>
 

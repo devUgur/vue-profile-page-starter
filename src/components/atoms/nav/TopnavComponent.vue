@@ -1,12 +1,12 @@
 <script setup lang="ts"></script>
 
 <template>
-  <nav id="topnav-component" class="sticky top-0 h-24 z-20 bg-gray-800 text-white">
+  <nav id="topnav-component" class="top-0 h-24 z-20">
     <div class="container flex justify-between items-center">
       <div>
-        <img class="w-auto h-16 sm:h-24" src="@/assets/logo/logo.jpg" alt="Logo" />
+        <img class="w-auto sm:h-24" src="@/assets/logo/logo.jpg" alt="Logo" />
       </div>
-      <div id="links" class="gap-4 sm:gap-10 hidden sm:flex">
+      <div id="links" class="hidden sm:flex">
         <RouterLink to="/" class="nav-link">Home</RouterLink>
         <RouterLink to="/about" class="nav-link">About Us</RouterLink>
         <RouterLink to="/services" class="nav-link">Services</RouterLink>

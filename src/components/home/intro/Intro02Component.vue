@@ -1,4 +1,4 @@
 <template>
-    <div>Intro 02</div>
+    <div></div>
   </template>
   
