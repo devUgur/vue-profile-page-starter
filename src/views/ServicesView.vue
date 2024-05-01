@@ -3,6 +3,7 @@ import LinearProgressBar from "@/components/animated/bars/LinearProgressBar.vue"
 import ABaseImageSection from "@/components/ABaseImageSection.vue";
 import ABaseImgModal from "@/components/animated/modals/ABaseImgModal.vue"
 import ABaseIntroSection from "@/components/ABaseIntroSection.vue"
+import ABaseIconSection from "@/components/ABaseIconSection.vue";
 const weAreSection = {
   title: 'We are awesome TEAM',
   content: [
@@ -14,12 +15,20 @@ const weAreSection = {
 
 <template>
   <ABaseIntroSection :content="'Home | Services'" />
-  <div class="grid place-content-center w-50 mx-auto ">
-    <ABaseImageSection :button="true" :position="'left'"  :sectionItem="weAreSection" />
-    <ABaseImageSection :button="true" :position="'left'"  :sectionItem="weAreSection" />
-    <ABaseImageSection :button="true" :position="'left'"  :sectionItem="weAreSection" />
+  <div class="flex gap-7">
+    <ABaseImageSection :button="false" :position="'left'"  :sectionItem="weAreSection" />
+    <ABaseImageSection :button="false" :position="'left'"  :sectionItem="weAreSection" />
+    <ABaseImageSection :button="false" :position="'left'"  :sectionItem="weAreSection" />
 
     <hr />
+  </div>
+  <div class="grid grid-cols-3 gap-6 place-content-center">
+    <ABaseIconSection  :button="false" :position="'left'"  :sectionItem="weAreSection"  />
+    <ABaseIconSection  :button="false" :position="'left'"  :sectionItem="weAreSection"  />
+    <ABaseIconSection  :button="false" :position="'left'"  :sectionItem="weAreSection"  />
+    <ABaseIconSection  :button="false" :position="'left'"  :sectionItem="weAreSection"  />
+    <ABaseIconSection  :button="false" :position="'left'"  :sectionItem="weAreSection"  />
+    <ABaseIconSection  :button="false" :position="'left'"  :sectionItem="weAreSection"  />
   </div>
 
 </template>

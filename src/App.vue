@@ -6,7 +6,7 @@ import MenuButton from './components/nav/MenuButton.vue'
 </script>
 
 <template>
-  <TopnavComponent></TopnavComponent>
+  <TopnavComponent />
   <RouterView />
   <FooterComponent></FooterComponent>
   <div class="md:hidden lg:hidden">

@@ -22,13 +22,16 @@ const chooseSection = {
 </script>
 
 <template>
-  <ABaseIntroSection :content="'Home | About'" />
-  <div class="grid place-content-center w-50 mx-auto ">
+  <ABaseIntroSection  :content="'Home | About'" />
+  <div class="grid place-content-center mx-auto ">
 
-    <BaseSection :button="true" :position="'center'"  :sectionItem="weAreSection" />
+    <BaseSection class="w-[50%]" :button="true" :position="'center'"  :sectionItem="weAreSection" />
     <hr />
-    <div class="md:flex flex-row">
-      <BaseSection :button="false" :position="'right'" :sectionItem="chooseSection" />
+    <div class="md:flex flex-row]">
+      <div class=" w-[50%]">
+
+        <BaseSection :button="false" :position="'right'" :sectionItem="chooseSection" />
+      </div>
       <div class="my-auto">
         <LinearProgressBar />
         <LinearProgressBar />

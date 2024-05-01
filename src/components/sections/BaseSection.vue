@@ -4,15 +4,15 @@ interface Section {
   content: string[]
   button: string
 }
-interface BaseSection {
-  button: boolean
+export interface BaseSection {
+  button?: boolean
   position: string
   sectionItem: Section
 }
 defineProps<BaseSection>()
 </script>
 <template>
-    <div class="login-box sm:w-full md:w-[50%] mx-auto">
+    <div class="login-box mx-auto">
       <h1 class="font-bold text-2xl" :class="{ 'float-end': position === 'right', 'text-center': position === 'center' }">{{ sectionItem.title }}</h1> <!-- Adjusted class binding -->
       <form>
         <div class="user-box">
@@ -52,7 +52,6 @@ defineProps<BaseSection>()
 }
 
 .login-box .user-box input {
-  width: 100%;
   padding: 10px 0;
   font-size: 16px;
   color: #fff;

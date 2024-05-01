@@ -1,0 +1,23 @@
+<script setup lang="ts">
+import type { BaseSection } from './sections/BaseSection.vue';
+import { defineProps } from 'vue';
+
+defineProps<BaseSection>();
+</script>
+
+<template>
+  <div class="container flex flex-col md:flex-row items-center justify-center">
+    <div class="my-auto border p-3 bg-slate-300">
+      <svg xmlns="http://www.w3.org/2000/svg" width="44" height="44" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-bell w-auto h-auto"><path d="M6 8a6 6 0 0 1 12 0c0 7 3 9 3 9H3s3-2 3-9"/><path d="M10.3 21a1.94 1.94 0 0 0 3.4 0"/></svg>
+    </div>
+    <div class="w-full md:w-[50%] lg:w-[64%] mx-4 mt-8 md:mt-0">
+      <h1 class="font-bold text-2xl text-center md:text-left">{{ sectionItem.title }}</h1>
+      <p v-for="content in sectionItem.content" class="text-slate-400" :key="content">
+        {{ content }}
+      </p>
+    </div>
+  </div>
+</template>
+
+<style>
+</style>
