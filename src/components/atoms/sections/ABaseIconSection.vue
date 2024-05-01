@@ -1,5 +1,5 @@
 <script setup lang="ts">
-import type { BaseSection } from './sections/BaseSection.vue';
+import type { BaseSection } from '@/components/atoms/sections/ABaseSection.vue';
 import { defineProps } from 'vue';
 
 defineProps<BaseSection>();

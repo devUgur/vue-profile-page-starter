@@ -10,9 +10,9 @@
 </template>
 
 <script setup lang="ts">
-import ABaseImageSection from "@/components/ABaseImageSection.vue";
-import ABaseIntroSection from "@/components/ABaseIntroSection.vue";
-import ABaseIconSection from "@/components/ABaseIconSection.vue";
+import ABaseImageSection from "@/components/molekules/MBaseImageSection.vue";
+import ABaseIntroSection from "@/components/atoms/sections/ABaseIntroSection.vue";
+import ABaseIconSection from "@/components/atoms/sections/ABaseIconSection.vue";
 
 const weAreSection = {
   title: 'We are awesome TEAM',

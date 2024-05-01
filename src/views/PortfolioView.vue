@@ -1,5 +1,5 @@
 <script setup lang="ts">
-import ABaseGallery from '@/components/gallery/ABaseGallery.vue';
+import ABaseGallery from '@/components/atoms/cards/ABaseGallery.vue';
 import { ref, onMounted } from 'vue';
 
 const activeTab = ref('one');

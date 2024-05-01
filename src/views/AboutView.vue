@@ -1,8 +1,8 @@
 <script setup lang="ts">
 import LinearProgressBar from "@/components/animated/bars/LinearProgressBar.vue"
-import BaseSection from '@/components/sections/BaseSection.vue'
+import BaseSection from '@/components/atoms/sections/ABaseSection.vue'
 import ABaseImgModal from "@/components/animated/modals/ABaseImgModal.vue"
-import ABaseIntroSection from "@/components/ABaseIntroSection.vue"
+import ABaseIntroSection from "@/components/atoms/sections/ABaseIntroSection.vue"
 const weAreSection = {
   title: 'We are awesome TEAM',
   content: [

@@ -1,6 +1,6 @@
 <script setup lang="ts">
-import BaseSection from '@/components/sections/BaseSection.vue';
-import ABaseImgModal from './animated/modals/ABaseImgModal.vue';
+import BaseSection from '@/components/atoms/sections/ABaseSection.vue'
+import ABaseImgModal from '../animated/modals/ABaseImgModal.vue';
 import { defineProps } from 'vue';
 
 const props = defineProps(['button', 'position']);

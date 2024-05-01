@@ -1,15 +1,13 @@
 <script setup lang="ts">
 import { RouterLink, RouterView } from 'vue-router'
-import TopnavComponent from './components/TopnavComponent.vue'
-import FooterComponent from './components/FooterComponent.vue'
-import MenuButton from './components/nav/MenuButton.vue'
-import ABaseFooterSection from './components/ABaseFooterSection.vue'
+import TopnavComponent from './components/atoms/nav/TopnavComponent.vue'
+import MenuButton from './components/atoms/nav/AMenuButton.vue'
+import ABaseFooterSection from './components/atoms/sections/ABaseFooterSection.vue'
 </script>
 
 <template>
   <TopnavComponent />
   <RouterView />
-  <FooterComponent></FooterComponent>
   <div class="md:hidden lg:hidden">
     <MenuButton />
   </div>
