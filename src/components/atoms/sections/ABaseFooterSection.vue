@@ -1,130 +1,61 @@
 <template>
-
-    
-    <footer class="footer">
-        <div class="container">
-          <div class="footer-content">
-            <div class="footer-logo">
-              Logo
-            </div>
-            <div class="footer-links">
-              <ul class="footer-menu">
-                <li><a href="#"></a></li>
-                <li><a href="#"></a></li>
-                <li><a href="#"></a></li>
-                <li><a href="#"></a></li>
-              </ul>
-            </div>
-            <div class="footer-social">
-              <ul class="social-icons">
-                <li><a href="#"><i class="fab fa-facebook-f"></i></a></li>
-                <li><a href="#"><i class="fab fa-twitter"></i></a></li>
-                <li><a href="#"><i class="fab fa-instagram"></i></a></li>
-                <li><a href="#"><i class="fab fa-linkedin-in"></i></a></li>
-              </ul>
-            </div>
-          </div>
-          <div class="footer-bottom">
-            <p>&copy; 2023 Your Company. All rights reserved.</p>
-          </div>
+  <footer class="bg-gray-800 text-white">
+    <div class="container mx-auto py-8 px-4">
+      <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+        <!-- Logo -->
+        <div class="footer-logo">
+          <h1 class="text-2xl font-bold">Logo</h1>
         </div>
-      </footer>
-
-    
+        <!-- Links -->
+        <div class="footer-links">
+          <h2 class="text-lg font-semibold mb-4">Links</h2>
+          <ul class="footer-menu space-y-2">
+            <li><a href="#" class="text-gray-300 hover:text-gray-500"></a></li>
+            <li><a href="#" class="text-gray-300 hover:text-gray-500"></a></li>
+            <li><a href="#" class="text-gray-300 hover:text-gray-500"></a></li>
+            <li><a href="#" class="text-gray-300 hover:text-gray-500"></a></li>
+          </ul>
+        </div>
+        <!-- Social Icons -->
+        <div class="footer-social">
+          <h2 class="text-lg font-semibold mb-4">Follow Us</h2>
+          <ul class="social-icons space-x-4">
+            <li><a href="#"><i class="fab fa-facebook-f text-gray-300 hover:text-gray-500"></i></a></li>
+            <li><a href="#"><i class="fab fa-twitter text-gray-300 hover:text-gray-500"></i></a></li>
+            <li><a href="#"><i class="fab fa-instagram text-gray-300 hover:text-gray-500"></i></a></li>
+            <li><a href="#"><i class="fab fa-linkedin-in text-gray-300 hover:text-gray-500"></i></a></li>
+          </ul>
+        </div>
+      </div>
+      <!-- Bottom Text -->
+      <div class="footer-bottom mt-8 text-center">
+        <p>&copy; 2023 Your Company. All rights reserved.</p>
+      </div>
+    </div>
+  </footer>
 </template>
 
 <script setup lang="ts">
-
 </script>
 
-<style  scoped>
+<style scoped>
 .footer {
-    font-size: 18px;
-    background-color: #333;
-    color: #fff;
-    padding: 30px 0;
-    border-radius: 10px;
-}
-  
-.container {
-    width: 100%;
-    margin: 0 auto;
-    padding: 0 50px;
-}
-  
-.footer-content {
-    display: grid;
-    grid-template-columns: 25% 50% 25%;
+  border-radius: 10px;
 }
 
-  
-.footer-menu {
-    list-style: none;
-    padding: 0;
-    margin: 0;
-    text-align: center;
-}
-  
 .footer-menu li {
-    display: inline-block;
-    margin-right: 20px;
+  display: block;
 }
-  
-.footer-menu li:last-child {
-    margin-right: 0;
-}
-  
+
 .footer-menu a {
-    color: #fff;
-    text-decoration: none;
+  color: #fff;
 }
-  
-.social-icons {
-    list-style: none;
-    padding: 0;
-    margin: 0;
-}
-  
+
 .social-icons li {
-    display: inline-block;
-    margin-right: 10px;
+  display: inline-block;
 }
-  
-.social-icons li:last-child {
-    margin-right: 0;
-}
-  
-.social-icons a {
-    color: #fff;
-    text-decoration: none;
-    font-size: 20px;
-}
-  
-.footer-bottom {
-    margin-top: 20px;
-    text-align: center;
-}
-  
+
 .footer-bottom p {
-    margin: 0;
-}
-  
-@media (max-width: 768px) {
-    .footer-content {
-        grid-template-columns: repeat(1, 1fr);
-        row-gap: 20px;
-    }
-    .footer-menu{
-        text-align: left;
-    }
-    .footer-menu li {
-      display: block;
-      margin-bottom: 10px;
-    }
-}
-  
-.attribute{
-    position: absolute;
-    bottom: 10px;
+  margin: 0;
 }
 </style>

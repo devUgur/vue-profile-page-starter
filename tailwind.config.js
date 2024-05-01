@@ -1,4 +1,5 @@
 /** @type {import('tailwindcss').Config} */
+import defaultTheme from 'tailwindcss/defaultTheme';
 export default {
   content: [
     './pages/**/*.{ts,tsx,vue}',
@@ -7,7 +8,9 @@ export default {
     './src/**/*.{ts,tsx,vue}'
   ],
   theme: {
-    extend: {}
+    extend: {fontFamily: {
+        libre: ['"Libre Baskerville"', ...defaultTheme.fontFamily.sans]
+      }}
   },
   plugins: []
 }

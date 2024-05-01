@@ -1,46 +1,34 @@
 <script setup lang="ts"></script>
 
 <template>
-  <span id="topnav-component" class="sticky top-0 h-24 z-20 bg-slate-300">
-    <span class="container flex justify-between place-items-center">
-      <span>
-        <img class="w-full h-24 bg-red-300" src="@/assets/logo/logo.jpg" />
-      </span>
-      <span id="links" class="gap-10 hidden sm:flex ">
-        <RouterLink to="/">Home</RouterLink>
-        <RouterLink to="/about">About Us</RouterLink>
-        <RouterLink to="/services">Services</RouterLink>
-        <RouterLink to="/portfolio">Portfolio</RouterLink>
-        <RouterLink to="/pricing">Pricing</RouterLink>
-        <RouterLink to="/contact">Contact</RouterLink>
-      </span>
-    </span>
-  </span>
+  <nav id="topnav-component" class="sticky top-0 h-24 z-20 bg-gray-800 text-white">
+    <div class="container flex justify-between items-center">
+      <div>
+        <img class="w-auto h-16 sm:h-24" src="@/assets/logo/logo.jpg" alt="Logo" />
+      </div>
+      <div id="links" class="gap-4 sm:gap-10 hidden sm:flex">
+        <RouterLink to="/" class="nav-link">Home</RouterLink>
+        <RouterLink to="/about" class="nav-link">About Us</RouterLink>
+        <RouterLink to="/services" class="nav-link">Services</RouterLink>
+        <RouterLink to="/portfolio" class="nav-link">Portfolio</RouterLink>
+        <RouterLink to="/pricing" class="nav-link">Pricing</RouterLink>
+        <RouterLink to="/contact" class="nav-link">Contact</RouterLink>
+      </div>
+    </div>
+  </nav>
 </template>
 
 <style scoped>
 nav {
   width: 100%;
-  font-size: 12px;
-  text-align: center;
-  margin-top: 2rem;
 }
 
-nav a.router-link-exact-active {
-  color: var(--color-text);
-}
-
-nav a.router-link-exact-active:hover {
-  background-color: transparent;
-}
-
-nav a {
-  display: inline-block;
-  padding: 0 1rem;
+.nav-link {
+  padding: 0.5rem 1rem;
   border-left: 1px solid var(--color-border);
 }
 
-nav a:first-of-type {
+.nav-link:first-of-type {
   border: 0;
 }
 </style>

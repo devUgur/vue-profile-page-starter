@@ -1,5 +1,5 @@
 <script setup lang="ts">
-import LinearProgressBar from "@/components/animated/bars/LinearProgressBar.vue"
+import LinearProgressBar from "@/components/atoms/bars/LinearProgressBar.vue"
 import BaseSection from '@/components/atoms/sections/ABaseSection.vue'
 import ABaseImgModal from "@/components/atoms/img/ABaseImgModal.vue"
 import ABaseIntroSection from "@/components/atoms/sections/ABaseIntroSection.vue"
@@ -22,11 +22,11 @@ const chooseSection = {
 </script>
 
 <template>
-  <ABaseIntroSection  :content="'Home | About'" />
   <div class="grid place-content-center mx-auto ">
-
+    
     <BaseSection class="w-[50%]" :button="true" :position="'center'"  :sectionItem="weAreSection" />
     <hr />
+    <ABaseIntroSection  :content="'Home | About'" />
     <div class="md:flex flex-row]">
       <div class=" w-[50%]">
 
