@@ -35,7 +35,7 @@ defineProps<BaseSection>()
 <style>
 .login-box {
   position: relative;
-  padding: 40px;
+  padding: 20px;
   box-sizing: border-box;
   border-radius: 10px;
 }

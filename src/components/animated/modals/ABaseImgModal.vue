@@ -1,9 +1,12 @@
 <template>
-  <img id="myImg" src="@/assets/logo/logo.jpg" alt="Trolltunga, Norway" >
+  <div class="border mt-5">
 
-  <!-- The Modal -->
-  <div id="myModal" class="modal">
-    <img class="modal-content" id="img01">
+    <img id="myImg" src="@/assets/logo/logo.jpg" alt="Trolltunga, Norway" >
+    
+    <!-- The Modal -->
+    <div id="myModal" class="modal">
+      <img class="modal-content" id="img01">
+    </div>
   </div>
 </template>
 
@@ -62,7 +65,6 @@ onMounted(() => {
     margin: auto;
     display: block;
     width: 75%;
-    //max-width: 75%;
 }
 
 /* Caption of Modal Image */

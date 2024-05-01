@@ -2,6 +2,7 @@
 import LinearProgressBar from "@/components/animated/bars/LinearProgressBar.vue"
 import BaseSection from '@/components/sections/BaseSection.vue'
 import ABaseImgModal from "@/components/animated/modals/ABaseImgModal.vue"
+import ABaseIntroSection from "@/components/ABaseIntroSection.vue"
 const weAreSection = {
   title: 'We are awesome TEAM',
   content: [
@@ -21,9 +22,7 @@ const chooseSection = {
 </script>
 
 <template>
-  <div class="grid place-content-center border bg-slate-500 text-white p-9 font-bold text-2xl" id="about-view">
-    <h1>Home | About Us</h1>
-  </div>
+  <ABaseIntroSection :content="'Home | About'" />
   <div class="grid place-content-center w-50 mx-auto ">
 
     <BaseSection :button="true" :position="'center'"  :sectionItem="weAreSection" />
