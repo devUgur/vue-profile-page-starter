@@ -10,6 +10,7 @@
         <RouterLink to="/">Home</RouterLink>
         <RouterLink to="/about">About Us</RouterLink>
         <RouterLink to="/services">Services</RouterLink>
+        <RouterLink to="/portfolio">Portfolio</RouterLink>
         <RouterLink to="/pricing">Pricing</RouterLink>
         <RouterLink to="/contact">Contact</RouterLink>
       </span>

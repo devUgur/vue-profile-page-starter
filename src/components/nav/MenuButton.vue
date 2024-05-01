@@ -9,6 +9,7 @@
         <li><RouterLink to="/about">About Us</RouterLink></li>
         <li><RouterLink to="/services">Services</RouterLink></li>
         <li><RouterLink to="/pricing">Pricing</RouterLink></li>
+        <li><RouterLink to="/profile">Profile</RouterLink></li>
         <li><RouterLink to="/contact">Contact</RouterLink></li>
       </ul>
     </nav>

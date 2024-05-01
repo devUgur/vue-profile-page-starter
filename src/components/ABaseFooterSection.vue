@@ -31,12 +31,6 @@
       </footer>
 
     
-    <div class="attribute">
-        Create by 
-        <a href="">
-            Jay Ramoliya
-        </a >
-    </div>
 </template>
 
 <script setup lang="ts">
