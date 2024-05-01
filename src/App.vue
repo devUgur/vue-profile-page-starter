@@ -3,6 +3,7 @@ import { RouterLink, RouterView } from 'vue-router'
 import TopnavComponent from './components/TopnavComponent.vue'
 import FooterComponent from './components/FooterComponent.vue'
 import MenuButton from './components/nav/MenuButton.vue'
+import ABaseFooterSection from './components/ABaseFooterSection.vue'
 </script>
 
 <template>
@@ -12,6 +13,7 @@ import MenuButton from './components/nav/MenuButton.vue'
   <div class="md:hidden lg:hidden">
     <MenuButton />
   </div>
+  <ABaseFooterSection />
 </template>
 
 <style scoped></style>

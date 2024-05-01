@@ -1,20 +1,20 @@
 <script setup lang="ts"></script>
 
 <template>
-  <div id="topnav-component" class="sticky top-0 bg-white h-24 z-20">
-    <div class="container flex justify-between place-items-center">
-      <div>
+  <span id="topnav-component" class="sticky top-0 h-24 z-20 bg-slate-300">
+    <span class="container flex justify-between place-items-center">
+      <span>
         <img class="w-full h-24 bg-red-300" src="@/assets/logo/logo.jpg" />
-      </div>
-      <div id="links" class="gap-10 hidden sm:flex">
+      </span>
+      <span id="links" class="gap-10 hidden sm:flex ">
         <RouterLink to="/">Home</RouterLink>
         <RouterLink to="/about">About Us</RouterLink>
         <RouterLink to="/services">Services</RouterLink>
         <RouterLink to="/pricing">Pricing</RouterLink>
         <RouterLink to="/contact">Contact</RouterLink>
-      </div>
-    </div>
-  </div>
+      </span>
+    </span>
+  </span>
 </template>
 
 <style scoped>
