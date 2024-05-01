@@ -42,7 +42,7 @@ const slides = [
 </script>
 
 <template>
-  <div id="home-intro-component">
+  <div id="home-intro-component" class="shadow-xl mx-11">
     <vueper-slides
       fixed-height="70vh"
       autoplay
@@ -53,10 +53,11 @@ const slides = [
       :pause-on-touch="false"
       :duration="10000"
       fade
+      class="shadow-xl"
     >
-      <vueper-slide v-for="(slide, i) in slides" :key="i" :image="slide.image">
+      <vueper-slide v-for="(slide, i) in slides" :key="i" :image="slide.image" class="shadow-xl">
         <template v-slot:content>
-          <component :is="slide.component"></component>
+          <component class="shadow-xl" :is="slide.component"></component>
         </template>
       </vueper-slide>
     </vueper-slides>

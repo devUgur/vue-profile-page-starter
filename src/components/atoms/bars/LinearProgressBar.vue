@@ -36,7 +36,7 @@ const interval = setInterval(() => {
   margin:auto;
 }
 .text {
-  color: white;
+  color: rgb(0, 0, 0);
 }
 .progress {
   height: 100%;
