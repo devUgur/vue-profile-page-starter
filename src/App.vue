@@ -6,12 +6,12 @@ import ABaseFooterSection from './components/atoms/sections/ABaseFooterSection.v
 </script>
 
 <template>
-  <div class="md:hidden lg:hidden font-libre">
-    <MenuButton />
-  </div>
-  <TopnavComponent class="font-libre"  />
+  <TopnavComponent  />
   <RouterView class="font-libre h-screen" />
   <ABaseFooterSection class="font-libre"  />
+  <div class="lg:hidden font-libre">
+    <MenuButton />
+  </div>
 </template>
 
 <style scoped></style>
