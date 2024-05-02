@@ -6,6 +6,7 @@ import HomeOurServicesComponent from '@/components/home/HomeOurServicesComponent
 
 <template>
   <div id="home-view">
+    <ABaseVideoSection />
     <!-- <HomeIntroComponent class="p-12"></HomeIntroComponent> -->
   </div>
 </template>

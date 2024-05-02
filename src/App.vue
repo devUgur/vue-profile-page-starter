@@ -8,10 +8,10 @@ import ABaseFooterSection from './components/atoms/sections/ABaseFooterSection.v
 <template>
   <TopnavComponent  />
   <RouterView class="font-libre h-screen" />
-  <ABaseFooterSection class="font-libre"  />
   <div class="lg:hidden font-libre">
     <MenuButton />
   </div>
+  <ABaseFooterSection class="font-libre"  />
 </template>
 
 <style scoped></style>
